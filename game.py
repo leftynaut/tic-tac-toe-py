@@ -2,7 +2,7 @@ def print_board(board):
   print(" {} | {} | {}\n-----------\n {} | {} | {}\n-----------\n {} | {} | {}".format(board[0],board[1],board[2],board[3],board[4],board[5],board[6],board[7],board[8]))
 
 def check_win(player, board):
-  if board[0] == board[1] == board[2] or board[3] == board[4] == board[5] or board[6] == board[7] == board[8] or board[0] == board[3] == board[6] or board[1] == board[4] == board[7] or board[2] == board[5] == board[8]:
+  if board[0] == board[1] == board[2] or board[3] == board[4] == board[5] or board[6] == board[7] == board[8] or board[0] == board[3] == board[6] or board[1] == board[4] == board[7] or board[2] == board[5] == board[8] or board[0] == board[4] == board[8] or board[2] == board[4] == board[6]:
     print("{} is the winner".format(player))
 
 def new_turn(player, board):

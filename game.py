@@ -42,6 +42,7 @@ def start_game(p1):
     new_turn(p1, board)
 
 def new_game():
+    clear()
     piece = input("Player 1, would you like to be X or O? ").upper()
     if piece not in ['X','O']:
         new_game()

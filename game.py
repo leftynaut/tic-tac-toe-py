@@ -1,3 +1,4 @@
+from termcolor import colored
 import os
 
 def clear():
